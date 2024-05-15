@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About Us </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+    .owl-carousel {
+      display: none;
+    }
+    .owl-carousel .item {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .owl-carousel .item .image-container {
+      flex: 1;
+      max-width: 40%;
+    }
+    .owl-carousel .item .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    .owl-carousel .item .writeup {
+      flex: 1;
+      padding: 0 20px;
+      font-size: 16px;
+    }
+    .owl-carousel .item .writeup h3 {
+      font-size: 24px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #fff;
+      background-color: #000; 
+    }
+    .navbar img {
+      max-height: 60px; /* Adjust the height as needed */
+      margin-right: 10px;
+      background-color: #000;
+    }
+    .navbar h1 {
+      margin: 0;
+      margin-right: 0; 
+      color: #fff; /* Change text color to white */
+    }
+    .our-story {
+      background-color: #1E88E5;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .our-story h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .our-story p {
+      font-size: 18px;
+      line-height: 1.6;
+    }  
+  </style>
+</head>
+
+
+<body style="background-color: #B3E5FC;">
+  <div class="navbar">
+   {% if request.user.is_authenticated %}
+     {% include "ecom/customer_navbar.html" %}
+   {% else %}
+    {% include "ecom/navbar.html" %}
+   {% endif %}
+  </div> 
+
+  <div style="padding: 20px;">
+    <h2 style="text-align:center;">About Us</h2>
+    
+ 
+      
+    <div class="owl-carousel farm-carousel">
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\farm1.jpg' %}" alt="Farm Image 1">
+        </div>
+        <div class="writeup">
+          <h3>Our Farm</h3>
+          <p>
+            At our farm, we're more than just producers; we're stewards of the land, committed to sustainable farming practices and preserving the rich agricultural heritage of our region.</p>
+          <p>Nestled in the heart of Palghar, our farm spans acres of fertile soil, blessed with abundant sunshine and pure water sources.</p>
+          <p>Here, we cultivate a diverse range of crops, from luscious fruits to vibrant vegetables, each nurtured with care from seed to harvest.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\farm4.jpg' %}" alt="Farm Image 2">
+        </div>
+        <div class="writeup">
+          <h3>Our Farm</h3>
+          <p>Our journey began generations ago when our ancestors first tilled this soil, instilling in us a deep reverence for nature and a profound understanding of the interconnectedness of all living things</p>
+          <p>Today, we honor that legacy by employing innovative techniques that promote biodiversity, minimize waste, and prioritize soil health</p>
+          <p>Through crop rotation, natural pest management, and organic fertilization, we strive to maintain a harmonious balance with the land, ensuring its vitality for generations to come.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\farm3.jpg' %}" alt="Farm Image 3">
+        </div>
+        <div class="writeup">
+          <h3>Our Farm</h3>
+          <p>But our farm is more than just fields and crops; it's a vibrant community hub where families gather, visitors explore, and knowledge is shared.</p>
+          <p> We welcome guests to experience the beauty of rural life through farm tours, educational workshops, and seasonal events</p> 
+          <p>Whether you're seeking fresh produce, a tranquil escape from the city, or simply a deeper connection to the food you eat, our farm is a place where the past meets the present, and the seeds of sustainability are sown for the future.</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center;">Our Fresh Produce</p>
+    
+    <div class="owl-carousel farm-carousel">
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\fresh1.jpg' %}" alt="Farm Image 1">
+        </div>
+        <div class="writeup">
+          <h3>Our Fresh Produce</h3>
+          <p>At Farmie Website , we're passionate about connecting you with the freshest farm products straight from our fields to your table.</p>
+          <p> Our journey begins in the heart of our family-owned farm, where generations of expertise and a commitment to sustainable farming practices converge. </p>
+          <p>Nestled in the rolling countryside, our fields are meticulously tended with care, ensuring that every crop receives the attention it deserves to flourish.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\fresh2.avif' %}" alt="Farm Image 2">
+        </div>
+        <div class="writeup">
+          <h3>Our Fresh Produce</h3>
+          <p>From the golden stalks of maize dancing in the breeze to the vibrant hues of our seasonal vegetables, our produce reflects the bounty of nature's harvest.</p>
+          <p>We take pride in cultivating a diverse array of crops, each bursting with flavor and nutritional goodness. </p>
+          <p>Whether you're craving the sweet crunch of freshly picked corn or the earthy richness of heirloom tomatoes, you'll find an abundance of wholesome options to delight your senses.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\fresh3.jpg' %}" alt="Farm Image 3">
+        </div>
+        <div class="writeup">
+          <h3>Our Fresh Produce</h3>
+          <p>But our dedication to quality extends beyond the fields. From the moment our produce is harvested to the second it arrives at your doorstep, we prioritize freshness and integrity every step of the way</p>
+          <p>With stringent quality control measures and efficient logistics, we ensure that only the finest fruits of our labor reach your kitchen</p>
+          <p>Join us in celebrating the joys of farm-fresh goodness and savor the difference that our passion for quality makes in every bite.</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center;">Our Team</p>
+   
+    <div class="owl-carousel farm-carousel">
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\team1.jpg' %}" alt="Farm Image 1">
+        </div>
+        <div class="writeup">
+          <h3>Our Team</h3>
+          <p>Our team at Farmie website is a diverse blend of passionate individuals, each deeply rooted in our commitment to promoting sustainable agriculture and connecting consumers with high-quality farm products.</p>
+          <p>From farmers with generations of expertise to tech-savvy marketers dedicated to expanding our reach, we collaborate seamlessly to bring you the best of what the earth has to offer.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\team2.jpg' %}" alt="Farm Image 2">
+        </div>
+        <div class="writeup">
+          <h3>Our Team</h3>
+          <p>At the heart of our team are the farmers themselves, the backbone of our operation.</p>
+          <p>With years of experience and a profound respect for the land, they cultivate crops using traditional methods alongside innovative practices that prioritize environmental stewardship.</p>
+          <p> Their dedication ensures that every product we offer is grown with care, preserving the rich flavors and nutritional integrity of the land</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image-container">
+          <img src="{% static 'U:\farmie\ecommerce\static\images\team1.jpg' %}" alt="Farm Image 3">
+        </div>
+        <div class="writeup">
+          <h3>Our Team</h3>
+          <p>Complementing our farmers' expertise is our dynamic marketing and logistics team. From curating a diverse selection of products to optimizing the online shopping experience, they work tirelessly to bridge the gap between farm and table</p>
+          <p>With a keen understanding of consumer preferences and a commitment to transparency, our team ensures that every purchase supports not just a product, but a way of life centered on sustainability and community.</p>
+          <p>Together, we strive to redefine the relationship between consumers and their food, fostering a deeper appreciation for the journey from seed to harvest.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-story">
+      <h2>Our Story</h2>
+      <p>FARMIE is a family-owned farm dedicated to providing the freshest and highest quality produce to our customers. Nestled in the countryside, our farm benefits from rich soil and optimal growing conditions, allowing us to cultivate a diverse range of fruits and vegetables.</p>
+      <p>We take great pride in our sustainable farming practices, ensuring that our produce is not only delicious but also environmentally friendly. From planting to harvest, each step of the process is carefully managed to uphold our commitment to quality and sustainability.</p>
+      <p>At FARMIE, we believe in fostering strong connections with our community. Whether you're a loyal customer or a curious visitor, we welcome you to experience the freshness and flavor of our farm-fresh produce.</p>
+    </div>
+  </div>
+ 
+  {% include "ecom/footer.html" %}
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".farm-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+      });
+
+      $(".produce-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+      });
+
+      $(".team-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+      });
+    });
+  </script>
+</body>
+
+</html>
