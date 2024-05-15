@@ -9,7 +9,7 @@ Framie's E-commerce Website aims to bridge the gap between farmers and buyers by
 
 Features
 
-Product Listings: Browse a wide range of agricultural products including seeds, fertilizers, equipment, livestock, and more.
+Product Listings: Browse a wide range of agricultural products.
 
 Seller Dashboard: Empower farmers to create listings, manage inventory, and track sales through an intuitive seller dashboard.
 
